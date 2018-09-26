@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>关系学院</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/swiper.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+<header> <a href="#" class="i_back">返回</a> <a href="#" class="i_more"></a>
+  <h2>测评结果</h2>
+</header>
+<div class="header-blank"></div>
+<div class="cp-info-box">
+  <div class="cp-info">
+    <div class="left">
+      <h3>你是职场鹰派还是职场鸽派？</h3>
+      <p>职场生存指南</p>
+      <div class="tester">测试者：<br>
+        Angelique </div>
+      <div class="tips">*测评报告已保存到我的测评</div>
+    </div>
+    <div class="right">
+      <div class="time">2018.6.21</div>
+    </div>
+  </div>
+</div>
+<div class="cp-result">
+  <div class="hd">
+    <h3>测评结果</h3>
+  </div>
+  <div class="bd">
+    <div class="chart">
+      <div id="chart-container" style="height: 100%"></div>
+      <script type="text/javascript" src="js/echarts/echarts.min.js"></script> 
+      <script type="text/javascript">
+var dom = document.getElementById("chart-container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+option = {
+	title: {
+        text: '测评结果 78分',
+		textStyle: {
+		fontSize: '14',
+		},
+		x: '50%',
+		textAlign: 'center',
+    },
+	
+    xAxis: {
+        type: 'category',
+        data: ['冲突', '人际', '竞争', '合作']
+    },
+	
+    yAxis: {
+        type: 'value',
+		max:'100',
+    },
+    
+	
+    series: [{
+        label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+					color:'#333333',
+                }
+            },
+        data: [80, 75, 62, 70],
+		itemStyle: { 
+               normal:{ 
+                  color: function (params){
+                      var colorList = ['#40cccd','#fdc286','#ed494e','#f8ef58'];
+                      return colorList[params.dataIndex];
+                  }
+               },
+		},
+        type: 'bar',
+		barWidth: '20'
+    }]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script> 
+    </div>
+    <div class="item">
+      <h3><i></i>分类结果<b></b></h3>
+      <dl>
+        <dt><span class="i_c1"></span>维度-冲突</dt>
+        <dd> 你不愿意伤害任何人，要是跟人发生冲突，你要么委婉的解决，要么干脆避开冲突。如果别人得罪你，你也从不记仇。 </dd>
+      </dl>
+      <dl>
+        <dt><span class="i_c2"></span>维度-人际</dt>
+        <dd> 你对人温柔、周到、耐心，能理解他人的感受。你相信所有人都是善良的，就算做错了事也是有苦衷的。 </dd>
+      </dl>
+      <dl>
+        <dt><span class="i_c3"></span>维度-竞争</dt>
+        <dd> 你不看重输赢，别人赢了也能由衷地为他高兴。也不喜欢冒风险，凡事觉得稳妥最重要。为了跟别人保持良好关系，你尽量避开任何形式的竞争。 </dd>
+      </dl>
+      <dl>
+        <dt><span class="i_c4"></span>维度-合作</dt>
+        <dd> 你喜欢帮助人，为别人服务，也习惯服从别人。你很注意自己的行为，怕影响别人。 </dd>
+      </dl>
+    </div>
+    <div class="item">
+      <h3><i></i>测试结果<b></b></h3>
+      <p> 你的行为策略类型属于：<strong>【鸽九鹰一】</strong><br>
+        你是个比较被动的人，但是人缘比较好。你可能羞于表达自己，习惯听从别人的意见、顺从别人。你做事任劳任怨，尊重权威和长辈，是个比较可靠的人。 </p>
+    </div>
+    <div class="item">
+      <h3><i></i>总体建议<b></b></h3>
+      <p> 身为鸽派，你需要注意两点：<br>
+        ① 难以表达自己的意见或太过委婉而导致自己的意见被忽视；<br>
+        ② 害怕跟别人撕破脸，希望自己一直能做好人。<br>
+        根据这两点，给你下面三个建议： </p>
+      <dl>
+        <dt><span class="i_c5"></span>维护自身利益</dt>
+        <dd> 鸽派与人交往秉承三个原则：不得罪、不伤和气、不翻脸。这就导致一些人利用你的原则，恬不知耻地侵害你的利益。如果你一味忍让，只能让他更嚣张，进一步损害你的利益，相反，你大声说不，反击回去，他反倒不敢欺负你。你要记得，你是鸽子，不是包子。如果别人欺负到你头上来，不要忍气吞声。<br>
+          忽视自己利益的人，即使你的出发点再善良，也会被不知体恤的人看做是自轻自贱，一个自轻自贱的人，不会有人珍惜你。<br>
+          所以。一个人可以大多数时候都是一个被动的人，但关键时刻得站的出来，敢于维护自身的利益。 </dd>
+      </dl>
+      <dl>
+        <dt><span class="i_c6"></span>交一些性格互补的朋友</dt>
+        <dd> 你的身边一定有这样的朋友，人生节奏一定比你快，说话快、走路快、效率很高，每天都有忙不完的事。多跟这样的朋友交往、共事，学习他们身上一些的气质，比如，果敢、决断等。让自己在人际关系中更加主动 。 </dd>
+      </dl>
+      <dl>
+        <dt><span class="i_c7"></span>改变行事方式</dt>
+        <dd> 鸽派行事柔和，相信恒的力量。你只是有些内向，不善于表达自己。并不是害羞或者没有主见。<br>
+          你可以多锻炼自己公开场合演讲甚至歌唱的能力。和性格外向、情绪饱满的人相比你可能不如他们慷慨激昂，但你可以发挥自己谦逊柔和的特点，如果再有一点自嘲，你会非常出色。<br>
+          你要知道，行事方式的改变可以影响思维方式。如果你开始努力追求生活和做事效率，就会逐渐改变。你只有更勇敢的认识自己，才能让自己变得更好。 </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="xgtj">
+  <div class="hd">
+    <h3>相关推荐</h3>
+  </div>
+  <div class="bd">
+    <div class="list">
+      <h3><a href="#">你的原生家庭属于哪种类型？</a></h3>
+      <div class="price">￥9.9</div>
+      <div class="cate"><a href="#" class="btn_sa">家庭</a></div>
+      <div class="count">3.9W人已测</div>
+    </div>
+    <div class="list">
+      <h3><a href="#">你属于职场鹰派还是职场鸽派？</a></h3>
+      <div class="price">￥9.9</div>
+      <div class="cate"><a href="#" class="btn_sb">职场</a></div>
+      <div class="count">3.9W人已测</div>
+    </div>
+    <div class="list">
+      <h3><a href="#">丈夫类型测试</a></h3>
+      <div class="price">￥9.9</div>
+      <div class="cate"><a href="#" class="btn_sc">职场</a></div>
+      <div class="count">7265人已测</div>
+    </div>
+  </div>
+</div>
+<div class="footer-blank"></div>
+<footer class="footer-btn"> <a href="#" class="btn_ba">分享</a> </footer>
+</body>
+</html>
