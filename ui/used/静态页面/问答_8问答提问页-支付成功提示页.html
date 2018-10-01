@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>关系学院</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/swiper.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+
+<!--成功弹窗-->
+<div class="popup">
+  <div class="popup-box">
+    <div class="popup-title"></div>
+    <div class="popup-con">
+    
+      
+      <div class="txt">
+      <p>您已支付成功，<br>
+我们将会在72小时内回复您，<br>
+感谢您的耐心等待。</p>
+      </div>
+      
+      
+    </div>
+    <div class="popup-footer"> <a href="问答_5问答支付成功页.html" class="btn_zb">确定</a> </div>
+  </div>
+</div>
+<!--成功弹窗end-->
+
+
+
+<header> <a href="javascript:history.back(-1)" class="i_back">返回</a> <a href="#" class="i_more"></a>
+  <h2>提问</h2>
+</header>
+<div class="header-blank"></div>
+<div class="wd-ask">
+  <div class="txt">
+    <textarea class="textarea_c">输入文字。问题描述请务必包含时间、相关人物、事件经过、后续结果等要素，并明确要提问的问题。每次只能提一个问题，如果您提出多个疑问，将只会回答第一个。另，暂不提供法律、医学等非人际关系问题解答。
+</textarea>
+    <p>0/300</p>
+  </div>
+</div>
+<div class="wd-ask-info">
+  <ul>
+    <li>
+      <h3><span class="i_t1"></span>选择分类</h3>
+      <div class="right"><a class="i_down"></a>
+      
+      <div class="menubox" style="display:none;">
+      <i></i>
+      <a>职场</a>
+      <a>亲密</a>
+      <a>家庭</a>
+      <a>社交</a>
+      </div>
+      
+ <script>
+ 
+$(function() {  
+
+$(".i_down").click(
+　　function () {
+　　$(".menubox").show();
+　　}
+);
+
+$(".menubox a").click(
+　　function () {
+　　$(".i_down").text($(this).text());
+    $(".menubox").hide();
+　　}
+);
+
+})
+ 
+ </script>     
+      
+      
+      </div>
+    </li>
+    <li>
+      <h3><span class="i_t2"></span>公开提问</h3>
+      <div class="right">
+        <label>是
+          <input name="gktw" type="radio" value="" checked>
+        </label>
+        <label>否
+          <input name="gktw" type="radio" value="">
+        </label>
+      </div>
+    </li>
+    <li>
+      <h3><span class="i_t3"></span>公开身份</h3>
+      <div class="right">
+        <label>是
+          <input name="gksf" type="radio" value="" checked>
+        </label>
+        <label>否
+          <input name="gksf" type="radio" value="">
+        </label>
+      </div>
+    </li>
+    <li>
+      <h3><span class="i_t4"></span>提问须知</h3>
+      <p> ①问题描述请务必包含时间、相关人物、事件经过、后续结果等要素，并明确要提问的问题。每次只能提一个问题，如果您提出多个疑问，将只会回答第一个。另，暂不提供法律、医学等非人际关系问题解答。如提问超出范畴，将会退费不予回答。<br>
+        ②您付款成功后的72小时内将会得到相关回答。<br>
+        ③提问时，您可以选择是否公开提问、是否公开您的头像和昵称。在您公开提问的情况下，其他用户可以1元围观您的问题及答案。（包括公开提问且不公开头像及昵称情况）<br>
+        ④本产品为虚拟产品，若无特殊情况，不予退款，敬请理解。 </p>
+    </li>
+  </ul>
+</div>
+<div class="footer-blank"></div>
+<footer class="footer-btn"> <a href="#" class="btn_ba">提交￥49.9</a> </footer>
+</body>
+</html>
