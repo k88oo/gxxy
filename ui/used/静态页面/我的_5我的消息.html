@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>关系学院</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/swiper.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/swiper.min.js"></script>
+</head>
+
+<body class="bg-w">
+<header> <a href="javascript:history.back(-1)" class="i_back">返回</a> <a href="#" class="i_more"></a>
+  <h2>我的消息</h2>
+</header>
+<div class="header-blank"></div>
+
+<div class="my-msg-list">
+
+<div class="list"> 
+      <a href="javascript:void(0);" class="i_del"></a>
+      <a href="javascript:void(0);" class="btn_del"><b>删除</b></a>
+      <a href="javascript:void(0);" class="btn_cancel"><b>取消</b></a>
+      
+<a href="我的_5我的消息(消息详情-系统通知).html">
+<h3><span class="i_m1"><b></b></span>系统消息</h3>
+<p>双十一优惠</p>
+<div class="time">2分钟前</div>
+</a>
+
+</div>
+
+<div class="list"> 
+      <a href="javascript:void(0);" class="i_del"></a>
+      <a href="javascript:void(0);" class="btn_del"><b>删除</b></a>
+      <a href="javascript:void(0);" class="btn_cancel"><b>取消</b></a>
+<a href="我的_5我的消息(消息详情-问答).html">     
+<h3><span class="i_m2"></span>你的提问有新的回复</h3>
+<p>心理独立的人，才有可能改变现状。认为所有事...</p>
+<div class="time">8小时前</div>
+</a>
+</div>
+
+<div class="list"> 
+      <a href="javascript:void(0);" class="i_del"></a>
+      <a href="javascript:void(0);" class="btn_del"><b>删除</b></a>
+      <a href="javascript:void(0);" class="btn_cancel"><b>取消</b></a>
+<a href="我的_5我的消息(消息详情-点赞).html">     
+<h3><span class="i_m3"></span>你的帖子有新动态</h3>
+<p>用户三号 给你点了赞（评论）</p>
+<div class="time">3天前</div>
+</a>
+</div>
+
+
+
+</div>
+
+
+<script>
+$(function() {  
+
+
+$(".i_del").click(
+　　function () {
+　　$(this).parent().addClass("hover");
+　　}
+);
+
+$(".btn_del").click(
+　　function () {
+　　$(this).parent().hide();
+　　}
+);
+
+$(".btn_cancel").click(
+　　function () {
+　　$(this).parent().removeClass("hover");
+　　}
+);
+
+})
+
+</script>
+
+
+</body>
+</html>

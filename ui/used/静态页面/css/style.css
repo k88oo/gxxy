@@ -57,8 +57,9 @@ footer .btn_ba{margin:0px 15px;}
 
 .searchbox-fixed{ position:fixed;top:50px;left:0px;right:0px;z-index:99;}
 
-.header-tab{ position:fixed;top:50px;height:30px;line-height:30px;font-size:14px;background:#e3e3e3;left:0px;right:0px;z-index:99;}
-.header-tab li{width:50%; text-align:center;float:left;}
+.header-tab{ position:fixed;top:50px;height:30px;line-height:30px;font-size:14px;background:#e3e3e3;left:0px;right:0px;z-index:99; }
+.header-tab ul{display:flex;}
+.header-tab li{flex:1; text-align:center;border-right:1px #d7d7d7 solid;float:left;}
 .header-tab li a{color:#333;font-weight:bold;display:block;}
 .header-tab .act{background:#ffbf00;}
 .header-tab .act a{color:#fff;}
@@ -197,9 +198,9 @@ footer .btn_ba{margin:0px 15px;}
 .qz-list .hd h3 .act{background:#ffbf00;color:#333;}
 .qz-list .bd {padding:0px 0px 50px 0px;clear:both;zoom:1;}
 .qz-list .bd:after{content: ""; display: block; clear: both; height: 0px;}
-.qz-list .bd .list{border-bottom:1px #e5e5e5 solid;padding:10px 15px;clear:both;zoom:1;}
+.qz-list .bd .list{border-bottom:1px #e5e5e5 solid;padding:10px 15px;clear:both;zoom:1; position:relative;}
 .qz-list .bd .list:after{content: ""; display: block; clear: both; height: 0px;}
-.qz-list .bd .list .username h3{font-size:14px;font-weight:bold;display:inline-block;margin:0px 10px 0px 0px;}
+.qz-list .bd .list .username h3{line-height:24px;font-size:14px;font-weight:bold;display:inline-block;margin:0px 10px 0px 0px;}
 .qz-list .bd .list .username .i_top{height:16px;line-height:16px;border-radius:20px;padding:0px 5px;font-size:12px;background:#ffbf00;color:#333;display:inline-block;}
 .qz-list .bd .list .stat{margin-bottom:10px;}
 .qz-list .bd .list .stat .time{color:#999;margin:0px 10px 0px 0px; }
@@ -211,6 +212,19 @@ footer .btn_ba{margin:0px 15px;}
 .qz-list .bd .list .pic li img{width:100%;}
 .qz-list .bd .list .pic .more{ height:100%;text-align:right; position:absolute;right:0px;top:0px;}
 .qz-list .bd .list .pic .more .i_more{width:20px;height:100%;background:url(../images/i_more.png) no-repeat center center; background-size:20px 20px;display:block; opacity:0.3;}
+
+.qz-list .bd .list .i_del{width:30px;height:30px; background:url(../images/i_del.png) no-repeat center center; background-size:18px 18px;display:block; position:absolute;right:10px;top:5px;}
+
+.qz-list .bd .list .btn_del{display:none;}
+.qz-list .bd .list .btn_cancel{display:none;}
+
+.qz-list .bd .hover .btn_del{ width:20px;padding:0px 10px;background:#d40606; font-size:14px;font-weight:bold;color:#fff;text-align:center;position:absolute;right:0px;top:0px;height:100%; display:block;}
+.qz-list .bd .hover .btn_del b{width:20px;height:40px;line-height:20px;position:absolute;left:50%;top:50%;margin:-20px 0px 0px -10px;}
+
+.qz-list .bd .hover .btn_cancel{ width:20px;padding:0px 10px;background:#ccc; font-size:14px;font-weight:bold;color:#fff;text-align:center;position:absolute;right:40px;top:0px;height:100%; display:block;}
+.qz-list .bd .hover .btn_cancel b{width:20px;height:40px;line-height:20px;position:absolute;left:50%;top:50%;margin:-20px 0px 0px -10px;}
+
+.qz-list .bd .hover{padding:10px 90px 10px 15px;}
 
 
 
@@ -590,6 +604,58 @@ footer .btn_ba{margin:0px 15px;}
 .my-cp-list .list .time{height:20px;line-height:20px; position:absolute;bottom:0px;left:150px;font-size:12px;}
 .my-cp-list .list .txt h3{height:40px;line-height:20px;font-size:14px;overflow:hidden;font-weight:bold;position:absolute;top:10px;right:10px;left:150px;}
 .my-cp-list .list .txt p{height:20px;line-height:20px;font-size:12px;overflow:hidden;position:absolute;top:50px;right:10px;left:150px;}
+
+.my-msg-list{border-top:5px #e5e5e5 solid;}
+.my-msg-list .list{border-bottom:1px #e5e5e5 solid;padding:10px 15px;clear:both;zoom:1; position:relative;}
+.my-msg-list .list:after{content: ""; display: block; clear: both; height: 0px;}
+.my-msg-list .list h3{height:30px;line-height:30px;font-size:12px;color:#333;font-weight:bold;white-space:nowrap;overflow:hidden;}
+.my-msg-list .list h3 span{height:25px;display:inline-block;position:relative; vertical-align:middle;margin-right:5px;}
+.my-msg-list .list h3 span b{width:6px;height:6px; border-radius:6px;background:#e60012;display:block; position:absolute;right:-1px;top:-1px;}
+.my-msg-list .list h3 strong{color:#999;font-weight:bold;padding:0px 10px 0px 0px;}
+.my-msg-list .list h3 img{width:25px;height:25px; border-radius:100%; vertical-align:top;}
+.my-msg-list .list p{padding:5px 0px 0px 0px;line-height:24px;font-size:14px;color:#999; white-space:nowrap;overflow:hidden;}
+.my-msg-list .list .txt{ white-space:normal;color:#333; overflow:auto;}
+.my-msg-list .list .time{color:#999;line-height:20px;font-size:12px;}
+.my-msg-list .list .i_del{width:30px;height:30px; background:url(../images/i_del.png) no-repeat center center; background-size:18px 18px;display:block; position:absolute;right:10px;top:5px;}
+
+.my-msg-list .list .btn_del{display:none;}
+.my-msg-list .list .btn_cancel{display:none;}
+
+.my-msg-list .hover .btn_del{ width:20px;padding:0px 10px;background:#d40606; font-size:14px;font-weight:bold;color:#fff;text-align:center;position:absolute;right:0px;top:0px;height:100%; display:block;}
+.my-msg-list .hover .btn_del b{width:20px;height:40px;line-height:20px;position:absolute;left:50%;top:50%;margin:-20px 0px 0px -10px;}
+
+.my-msg-list .hover .btn_cancel{ width:20px;padding:0px 10px;background:#ccc; font-size:14px;font-weight:bold;color:#fff;text-align:center;position:absolute;right:40px;top:0px;height:100%; display:block;}
+.my-msg-list .hover .btn_cancel b{width:20px;height:40px;line-height:20px;position:absolute;left:50%;top:50%;margin:-20px 0px 0px -10px;}
+
+.my-msg-list .hover{padding:10px 90px 10px 15px;}
+
+.my-msg-list .more{border-bottom:1px #e5e5e5 solid;padding:0px 15px; text-align:center;}
+.my-msg-list .more a{display:block;font-size:14px;line-height:50px;}
+
+
+.i_m1{width:25px;height:25px;background:url(../images/i_m1.png) no-repeat center center #ffbf00; background-size:23px 23px; border-radius:100%;display:inline-block; vertical-align:middle;}
+.i_m2{width:25px;height:25px;background:url(../images/i_m2.png) no-repeat center center #ffbf00; background-size:23px 23px; border-radius:100%;display:inline-block; vertical-align:middle;}
+.i_m3{width:25px;height:25px;background:url(../images/i_m3.png) no-repeat center center #ffbf00; background-size:23px 23px; border-radius:100%;display:inline-block; vertical-align:middle;}
+.i_m4{width:25px;height:25px;background:url(../images/i_m4.png) no-repeat center center #ffbf00; background-size:23px 23px; border-radius:100%;display:inline-block; vertical-align:middle;}
+.i_m5{width:25px;height:25px;background:url(../images/i_m5.png) no-repeat center center #ffbf00; background-size:23px 23px; border-radius:100%;display:inline-block; vertical-align:middle;}
+
+
+.my-about{border-top:5px #e5e5e5 solid;}
+.my-about .box{height:100px; border-radius:10px; background:#ffbf00;margin:10px 5px 30px 5px; position:relative;}
+.my-about .box .pic{width:50px;height:50px; position:absolute;top:25px;left:30px;}
+.my-about .box .pic img{width:50px;height:50px;border-radius:50px;}
+.my-about .box .right{width:200px;height:100px;padding:0px 0px 0px 50px;background:url(../images/lan_h_bg.png) no-repeat left bottom; position:absolute;right:0px;bottom:0px;border-radius:0px 9px 9px 0px;}
+.my-about .box .right h3{line-height:100px;font-size:24px;font-weight:bold;color:#fff; text-align:center;}
+
+.my-about li{height:50px;line-height:50px;padding:0px 20px 0px 20px;color:#fff;border-radius:10px; background:#353535;margin:0px 15px 10px 15px; position:relative;}
+.my-about li h3{font-size:16px;font-weight:bold;color:#fff;}
+.my-about li .right{ font-size:16px;font-weight:bold;line-height:50px;position:absolute;right:20px;top:0px;}
+
+
+.article-detail{border-top:5px #e5e5e5 solid;padding:20px;font-size:14px;line-height:1.8;}
+.article-detail strong{font-weight:bold;}
+.article-detail h2{font-weight:bold; text-align:center;font-size:16px;padding:0px 0px 10px 0px;}
+
 
 .list-none{clear:both;padding:200px 0px;text-align:center;font-size:14px;color:#999; background:url(../images/list_none.png) no-repeat center 100px; background-size:100px 100px;}
 
